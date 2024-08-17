@@ -51,7 +51,7 @@ const response = await axios.post(`https://backend-production-ca32.up.railway.ap
               transition={{ duration: 0.7, ease: 'easeOut' }}
               className="relative"
             >
-              <FaUser className="absolute left-3 top-3 text-gray-400" />
+              <FaUser className="absolute left-6 top-5 text-gray-400" />
               <input
                 type="text"
                 placeholder="Username"
@@ -67,7 +67,7 @@ const response = await axios.post(`https://backend-production-ca32.up.railway.ap
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.1 }}
             className="relative"
           >
-            <FaEnvelope className="absolute left-3 top-3 text-gray-400" />
+            <FaEnvelope className="absolute left-6 top-5 text-gray-400" />
             <input
               type="email"
               placeholder="Email"
@@ -82,7 +82,7 @@ const response = await axios.post(`https://backend-production-ca32.up.railway.ap
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             className="relative"
           >
-            <FaLock className="absolute left-3 top-3 text-gray-400" />
+            <FaLock className="absolute left-6 top-5 text-gray-400" />
             <input
               type="password"
               placeholder="Password"
