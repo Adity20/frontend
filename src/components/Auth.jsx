@@ -15,12 +15,12 @@ const Auth = ({ setUser }) => {
     setError('');
     try {
       const endpoint = isLogin ? '/api/auth/local' : '/api/auth/local/register';
-      const response = await axios.post(`https://backend-production-ca32.up.railway.app/`, {
-        identifier: isLogin ? email : username,
-        username: username,
-        email: email,
-        password: password,
-      });
+const response = await axios.post(`https://backend-production-ca32.up.railway.app${endpoint}`, {
+    identifier: isLogin ? email : username,
+    username: username,
+    email: email,
+    password: password,
+});
       setUser(response.data.user);
     } catch (error) {
       setError(error.response ? JSON.stringify(error.response.data) : error.message);
