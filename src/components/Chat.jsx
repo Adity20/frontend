@@ -8,7 +8,7 @@ const Chat = () => {
   const [messages, setMessages] = useState([]);
 
   useEffect(() => {
-    const newSocket = io('http://localhost:1337', {
+    const newSocket = io('https://backend-production-ca32.up.railway.app/', {
       transports: ['polling']
     });
     setSocket(newSocket);

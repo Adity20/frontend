@@ -15,7 +15,7 @@ const Auth = ({ setUser }) => {
     setError('');
     try {
       const endpoint = isLogin ? '/api/auth/local' : '/api/auth/local/register';
-      const response = await axios.post(`http://localhost:1337${endpoint}`, {
+      const response = await axios.post(`https://backend-production-ca32.up.railway.app/`, {
         identifier: isLogin ? email : username,
         username: username,
         email: email,
